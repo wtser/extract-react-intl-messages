@@ -34,7 +34,7 @@ function loadLocaleFiles(locales: string[], buildDir: string, ext: string) {
       const output = isJson(ext) ? JSON.stringify({}) : yaml.safeDump({})
       fs.writeFileSync(file, output, { flag: 'wx' })
     } catch (error) {
-      if (error.code !== 'EEXIST') {
+      if ((error as { code: string }).code !== 'EEXIST') {
         throw error
       }
     }
