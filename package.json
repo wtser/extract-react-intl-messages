@@ -41,7 +41,7 @@
   "dependencies": {
     "@babel/core": "^7.9.0",
     "babel-plugin-react-intl": "^7.0.0",
-    "flat": "^5.0.0",
+    "flat": "^5.0.1",
     "glob": "^7.1.6",
     "js-yaml": "^3.13.1",
     "load-json-file": "^6.2.0",
